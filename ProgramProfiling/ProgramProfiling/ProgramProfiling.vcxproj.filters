@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\implementations">
+      <UniqueIdentifier>{f4c97c78-71a4-4fdf-9ed3-8bb4160dd8d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\implementations">
+      <UniqueIdentifier>{c29ab3de-aa1d-4d2d-b0e4-694912efe200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\helpers">
+      <UniqueIdentifier>{b0664cd7-bc34-4e49-8123-b6f98fe43af0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\helpers">
+      <UniqueIdentifier>{5911e6c3-41e4-424b-8842-cd48f601d3eb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -21,20 +33,23 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="VectorShifter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FunctionTimer.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="ArrayOperations.h">
+      <Filter>Header Files\implementations</Filter>
     </ClInclude>
     <ClInclude Include="Pallindrome.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\implementations</Filter>
     </ClInclude>
     <ClInclude Include="Sorter.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\implementations</Filter>
     </ClInclude>
-    <ClInclude Include="ArrayOperations.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="VectorShifter.h">
+      <Filter>Header Files\implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayUtils.h">
+      <Filter>Header Files\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionTimer.h">
+      <Filter>Header Files\helpers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -44,20 +59,23 @@
     <ClCompile Include="ProgramProfiling.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="VectorShifter.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FunctionTimer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="ArrayOperations.cpp">
+      <Filter>Source Files\implementations</Filter>
     </ClCompile>
     <ClCompile Include="Pallindrome.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\implementations</Filter>
     </ClCompile>
     <ClCompile Include="Sorter.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\implementations</Filter>
     </ClCompile>
-    <ClCompile Include="ArrayOperations.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="VectorShifter.cpp">
+      <Filter>Source Files\implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayUtils.cpp">
+      <Filter>Source Files\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionTimer.cpp">
+      <Filter>Source Files\helpers</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

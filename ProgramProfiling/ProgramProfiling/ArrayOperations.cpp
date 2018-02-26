@@ -72,3 +72,43 @@ tuple<int, int, int> ArrayOperations::MaxSubArray::findMaxCrossingSubArray(int A
 
 	return SubArrayData(leftMax, rightMax, leftSum + rightSum);
 }
+
+void ArrayOperations::ArrayOperationsDemo::arrayOperationsDemo()
+{
+	return arrayOperationsDemo(1);
+}
+
+void ArrayOperations::ArrayOperationsDemo::arrayOperationsDemo(int numFuncIterations)
+{
+	const int ARRAY_SIZE = 10;
+	int A[ARRAY_SIZE] = {};
+	ArrayUtils::makeAsMixedArray(A, ARRAY_SIZE);
+
+	cout << "________________________________________\n\n\n";
+	cout << "~~~\tMaximum Subarray\t~~~" << endl << endl;
+	cout << "Finding maximum subarray for " << ARRAY_SIZE << " element(s):\n";
+	cout << "Elements: ";
+	ArrayUtils::printArray(A, ARRAY_SIZE);
+
+	ArrayOperations arrayOperations;
+	tuple<int, int, int> maxSubArray = arrayOperations.findMaxSubArray(A, 0, ARRAY_SIZE);
+
+	//Timer for algorithm for n iterations
+	clock_t start = clock();
+
+	for (int i = 0; i < numFuncIterations; i++) {
+		arrayOperations.findMaxSubArray(A, 0, ARRAY_SIZE);
+	}
+
+	//The number of iterations to put each function through
+	double execTime;
+	execTime = (clock() - start) / (double)CLOCKS_PER_SEC;
+
+
+	cout << "|Time:\t" << execTime << "s\t|" << endl;
+	cout << "|Low:\t" << get<0>(maxSubArray) << "\t|" << endl;
+	cout << "|High:\t" << get<1>(maxSubArray) << "\t|" << endl;
+	cout << "|Sum:\t" << get<2>(maxSubArray) << "\t|" << endl;
+
+	cout << "\n\n\n________________________________________\n\n\n";
+}

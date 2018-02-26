@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ArrayOperations.h" />
+    <ClInclude Include="ArrayUtils.h" />
     <ClInclude Include="FunctionTimer.h" />
     <ClInclude Include="Pallindrome.h" />
     <ClInclude Include="Sorter.h" />
@@ -157,6 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ArrayOperations.cpp" />
+    <ClCompile Include="ArrayUtils.cpp" />
     <ClCompile Include="FunctionTimer.cpp" />
     <ClCompile Include="Pallindrome.cpp" />
     <ClCompile Include="ProgramProfiling.cpp" />

@@ -1,6 +1,7 @@
 #pragma once
 #ifndef ARRAYOPERATIONS_H
 #define ARRAYOPERATIONS_H
+#include"ArrayUtils.h"
 
 using namespace std;
 
@@ -18,6 +19,13 @@ private:
 
 public:
 	tuple<int, int, int> findMaxSubArray(int A[], int low, int high);
+
+	//Demo for ArrayOperations
+	class ArrayOperationsDemo {
+	public:
+		void arrayOperationsDemo();
+		void arrayOperationsDemo(int numFuncIterations);
+	};
 };
 
 #endif // !ARRAYOPERATIONS_H

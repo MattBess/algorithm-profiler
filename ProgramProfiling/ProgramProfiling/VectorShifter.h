@@ -13,6 +13,12 @@ public:
 	void shiftLeft(int units);
 	void shiftRight(int units);
 	string asString();
+
+	class VectorShifterDemo {
+	public:
+		void vectorShifterDemo();
+		void vectorShifterDemo(int numFuncIterations);
+	};
 };
 
 #endif

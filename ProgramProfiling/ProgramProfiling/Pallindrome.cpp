@@ -58,3 +58,79 @@ bool Pallindrome::isPallindrome3(string str)
 
 	return true;
 }
+
+void Pallindrome::PallindromeDemo::pallindromeDemo()
+{
+	return pallindromeDemo(1);
+}
+
+void Pallindrome::PallindromeDemo::pallindromeDemo(int numFuncIterations)
+{
+	FunctionTimer funcTimer;
+	double execTime;
+
+	//Pallindrome operations
+	Pallindrome pallindrome;
+	bool isPallindrome;
+
+	cout << "\n\n\n________________________________________\n\n\n";
+	cout << "~~~\tPallindrome Operations\t~~~" << endl << endl;
+	
+	//String 1
+	string str1 = "madam";
+	cout << "Word: " << str1 << endl;
+	cout << "Function 1 -" << endl;
+
+	isPallindrome = pallindrome.isPallindrome1(str1);
+	execTime = funcTimer.getExecutionTime(bind(&Pallindrome::isPallindrome1, &pallindrome, str1), numFuncIterations);
+	
+	cout << "\t| Pallindrome: " << isPallindrome << "\t|" << endl;
+	cout << "\t| Time: " << execTime << " seconds" << "\t|" << endl;
+	cout << "\t| Iterations: " << numFuncIterations << "\t|" << endl;
+
+	cout << "Function 2 -" << endl;
+	isPallindrome = pallindrome.isPallindrome2(str1);
+	execTime = funcTimer.getExecutionTime(bind(&Pallindrome::isPallindrome2, &pallindrome, str1), numFuncIterations);
+	cout << "\t| Pallindrome: " << isPallindrome << "\t|" << endl;
+	cout << "\t| Time: " << execTime << " seconds" << "\t|" << endl;
+	cout << "\t| Iterations: " << numFuncIterations << "\t|" << endl;
+
+	cout << "Function 3 -" << endl;
+	isPallindrome = pallindrome.isPallindrome3(str1);
+	execTime = funcTimer.getExecutionTime(bind(&Pallindrome::isPallindrome3, &pallindrome, str1), numFuncIterations);
+	cout << "\t| Pallindrome: " << isPallindrome << "\t|" << endl;
+	cout << "\t| Time: " << execTime << " seconds" << "\t|" << endl;
+	cout << "\t| Iterations: " << numFuncIterations << "\t|" << endl << endl << endl;
+	//End String 1
+
+
+
+	//String 2
+	string str2 = "darn";
+	cout << "Word: " << str2 << endl;
+	cout << "Function 1 -" << endl;
+	isPallindrome = pallindrome.isPallindrome1(str2);
+	execTime = funcTimer.getExecutionTime(bind(&Pallindrome::isPallindrome1, &pallindrome, str2), numFuncIterations);
+	cout << "\t| Pallindrome: " << isPallindrome << "\t|" << endl;
+	cout << "\t| Time: " << execTime << " seconds" << "\t|" << endl;
+	cout << "\t| Iterations: " << numFuncIterations << "\t|" << endl;
+
+	cout << "Function 2 -" << endl;
+	isPallindrome = pallindrome.isPallindrome2(str2);
+	execTime = funcTimer.getExecutionTime(bind(&Pallindrome::isPallindrome2, &pallindrome, str2), numFuncIterations);
+	cout << "\t| Pallindrome: " << isPallindrome << "\t|" << endl;
+	cout << "\t| Time: " << execTime << " seconds" << "\t|" << endl;
+	cout << "\t| Iterations: " << numFuncIterations << "\t|" << endl;
+
+	cout << "Function 3 -" << endl;
+	isPallindrome = pallindrome.isPallindrome3(str2);
+	execTime = funcTimer.getExecutionTime(bind(&Pallindrome::isPallindrome3, &pallindrome, str2), numFuncIterations);
+	cout << "\t| Pallindrome: " << isPallindrome << "\t|" << endl;
+	cout << "\t| Time: " << execTime << " seconds" << "\t|" << endl;
+	cout << "\t| Iterations: " << numFuncIterations << "\t|" << endl;
+	//End String 2
+
+	//End pallindrome operations
+
+	cout << "\n\n\n________________________________________\n\n\n";
+}

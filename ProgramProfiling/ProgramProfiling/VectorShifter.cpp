@@ -51,3 +51,37 @@ string VectorShifter::asString()
 	
 	return printedVector;
 }
+
+void VectorShifter::VectorShifterDemo::vectorShifterDemo()
+{
+	return vectorShifterDemo(1);
+}
+
+void VectorShifter::VectorShifterDemo::vectorShifterDemo(int numFuncIterations)
+{
+	FunctionTimer funcTimer;
+	double execTime;
+
+	cout << "\n\n\n________________________________________\n\n\n";
+	cout << "~~~\tVector Operations\t~~~" << endl << endl;
+	cout << "Normal Vector: ";
+
+	VectorShifter vectorShifter(10);
+	cout << vectorShifter.asString() << endl;
+
+	execTime = 0.0;
+	cout << endl << "Right Shift: " << endl;
+	execTime = funcTimer.getExecutionTime(bind(&VectorShifter::shiftRight, &vectorShifter, 3), numFuncIterations);
+	cout << "\tTime: " << execTime << " seconds" << endl;
+	cout << "\tIterations: " << numFuncIterations << endl;
+	cout << "\tNew Vector: " << vectorShifter.asString() << endl;
+
+	execTime = 0.0;
+	cout << endl << "Left Shift: " << endl;
+	execTime = funcTimer.getExecutionTime(bind(&VectorShifter::shiftLeft, &vectorShifter, 3), numFuncIterations);
+	cout << "\tTime: " << execTime << " seconds" << endl;
+	cout << "\tIterations: " << numFuncIterations << endl;
+	cout << "\tNew Vector: " << vectorShifter.asString() << endl;
+
+	cout << "\n\n\n________________________________________\n\n\n";
+}

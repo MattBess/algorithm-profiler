@@ -12,6 +12,12 @@ public:
 	bool isPallindrome1(string str);
 	bool isPallindrome2(string str);
 	bool isPallindrome3(string str);
+
+	class PallindromeDemo {
+	public:
+		void pallindromeDemo();
+		void pallindromeDemo(int numFuncIterations);
+	};
 };
 
 #endif // !PALLINDROME_H
