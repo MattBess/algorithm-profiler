@@ -149,9 +149,10 @@
   <ItemGroup>
     <ClInclude Include="ArrayOperations.h" />
     <ClInclude Include="ArrayUtils.h" />
+    <ClInclude Include="CountingSort.h" />
     <ClInclude Include="FunctionTimer.h" />
+    <ClInclude Include="InsertionSort.h" />
     <ClInclude Include="Pallindrome.h" />
-    <ClInclude Include="Sorter.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="VectorShifter.h" />
@@ -159,10 +160,11 @@
   <ItemGroup>
     <ClCompile Include="ArrayOperations.cpp" />
     <ClCompile Include="ArrayUtils.cpp" />
+    <ClCompile Include="CountingSort.cpp" />
     <ClCompile Include="FunctionTimer.cpp" />
+    <ClCompile Include="InsertionSort.cpp" />
     <ClCompile Include="Pallindrome.cpp" />
     <ClCompile Include="ProgramProfiling.cpp" />
-    <ClCompile Include="Sorter.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

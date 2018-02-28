@@ -25,6 +25,12 @@
     <Filter Include="Source Files\helpers">
       <UniqueIdentifier>{5911e6c3-41e4-424b-8842-cd48f601d3eb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\implementations\sorts">
+      <UniqueIdentifier>{045a228c-8997-4061-ae64-4454ad9d3ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\implementations\sorts">
+      <UniqueIdentifier>{aa1d84dc-98d8-4cce-a98f-f41e712d8265}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -39,9 +45,6 @@
     <ClInclude Include="Pallindrome.h">
       <Filter>Header Files\implementations</Filter>
     </ClInclude>
-    <ClInclude Include="Sorter.h">
-      <Filter>Header Files\implementations</Filter>
-    </ClInclude>
     <ClInclude Include="VectorShifter.h">
       <Filter>Header Files\implementations</Filter>
     </ClInclude>
@@ -50,6 +53,12 @@
     </ClInclude>
     <ClInclude Include="FunctionTimer.h">
       <Filter>Header Files\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="InsertionSort.h">
+      <Filter>Header Files\implementations\sorts</Filter>
+    </ClInclude>
+    <ClInclude Include="CountingSort.h">
+      <Filter>Header Files\implementations\sorts</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -65,9 +74,6 @@
     <ClCompile Include="Pallindrome.cpp">
       <Filter>Source Files\implementations</Filter>
     </ClCompile>
-    <ClCompile Include="Sorter.cpp">
-      <Filter>Source Files\implementations</Filter>
-    </ClCompile>
     <ClCompile Include="VectorShifter.cpp">
       <Filter>Source Files\implementations</Filter>
     </ClCompile>
@@ -76,6 +82,12 @@
     </ClCompile>
     <ClCompile Include="FunctionTimer.cpp">
       <Filter>Source Files\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertionSort.cpp">
+      <Filter>Source Files\implementations\sorts</Filter>
+    </ClCompile>
+    <ClCompile Include="CountingSort.cpp">
+      <Filter>Source Files\implementations\sorts</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

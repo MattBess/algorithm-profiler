@@ -1,3 +1,5 @@
 ﻿  ProgramProfiling.cpp
 c:\users\mbess\source\repos\algorithm-profiler\programprofiling\programprofiling\programprofiling.cpp(10): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  ProgramProfiling.vcxproj -> C:\Users\mbess\Source\Repos\algorithm-profiler\ProgramProfiling\Debug\ProgramProfiling.exe
+  CountingSort.cpp
+  Generating Code...
+  ProgramProfiling.vcxproj -> C:\Users\mbess\source\repos\algorithm-profiler\ProgramProfiling\Debug\ProgramProfiling.exe
